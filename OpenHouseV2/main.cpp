@@ -16,7 +16,7 @@
 #include "UI.h"
 
 /**
-\mainpage KnightFight
+\mainpage OpenHouse
 
 \tableofcontents
 
@@ -116,7 +116,7 @@ the SFML interface for OpenGL.
 int main()
 {
     //  Program setup variables.
-    std::string programTitle = "KnightFight:482 Final Project";
+    std::string programTitle = "OpenHouse:482 Final Project";
     GLint MinMajor = 3;
     GLint MinMinor = 3;
     GLint WindowWidth = 1500;
