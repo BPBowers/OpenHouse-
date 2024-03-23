@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OBJModelLoadingObjShader" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProgDebug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+					<Add library="sfml-audio-d" />
+					<Add library="C:/Program Files/CodeBlocks/MinGW/lib/libassimp.dll.a" />
+					<Add library="C:/Program Files/CodeBlocks/MinGW/lib/libglut.a" />
+					<Add library="C:/Program Files/CodeBlocks/MinGW/lib/libglut.dll.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProgRelease" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DSFML_DYNAMIC" />
+			<Add directory="C:/Program Files/CodeBlocks/MinGW/include" />
+			<Add directory="C:/src/libraries/assimp-5.3.1B/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="glew32" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="freetype" />
+			<Add library="freeglut" />
+			<Add library="assimp" />
+			<Add directory="C:/Program Files/CodeBlocks/MinGW/lib" />
+			<Add directory="C:/src/libraries/assimp-5.3.1B/build/lib" />
+		</Linker>
+		<Unit filename="AspectRatioVert.glsl" />
+		<Unit filename="Axes.cpp" />
+		<Unit filename="Axes.h" />
+		<Unit filename="Box.cpp" />
+		<Unit filename="Box.h" />
+		<Unit filename="Cube.cpp" />
+		<Unit filename="Cube.h" />
+		<Unit filename="Fighter.cpp" />
+		<Unit filename="Fighter.h" />
+		<Unit filename="FragmentCubeMap.glsl" />
+		<Unit filename="GraphicsEngine.cpp" />
+		<Unit filename="GraphicsEngine.h" />
+		<Unit filename="Light.cpp" />
+		<Unit filename="Light.h" />
+		<Unit filename="LoadShaders.cpp" />
+		<Unit filename="LoadShaders.h" />
+		<Unit filename="Material.cpp" />
+		<Unit filename="Material.h" />
+		<Unit filename="MaterialPresets.h" />
+		<Unit filename="ModelLoaderAssimp.cpp" />
+		<Unit filename="ModelLoaderAssimp.h" />
+		<Unit filename="Models.cpp" />
+		<Unit filename="Models.h" />
+		<Unit filename="ObjFragmentShader.glsl" />
+		<Unit filename="ObjModel.cpp" />
+		<Unit filename="ObjModel.h" />
+		<Unit filename="ObjVertexShader.glsl" />
+		<Unit filename="PhongMultipleLightsAndTexture.glsl" />
+		<Unit filename="Plane.cpp" />
+		<Unit filename="Plane.h" />
+		<Unit filename="ProgramDefines.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Shape.cpp" />
+		<Unit filename="Shape.h" />
+		<Unit filename="SphericalCamera.cpp" />
+		<Unit filename="SphericalCamera.h" />
+		<Unit filename="StrangeFrag.glsl" />
+		<Unit filename="TextRendererTTF.cpp" />
+		<Unit filename="TextRendererTTF.h" />
+		<Unit filename="UI.cpp" />
+		<Unit filename="UI.h" />
+		<Unit filename="VertexShaderCubeMap.glsl" />
+		<Unit filename="VertexShaderLightingTexture.glsl" />
+		<Unit filename="YPRCamera.cpp" />
+		<Unit filename="YPRCamera.h" />
+		<Unit filename="assimp_sandbox.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="math_3d.cpp" />
+		<Unit filename="ogldev_engine_common.h" />
+		<Unit filename="ogldev_material.h" />
+		<Unit filename="ogldev_math_3d.h" />
+		<Unit filename="ogldev_mesh_common.h" />
+		<Unit filename="ogldev_texture.cpp" />
+		<Unit filename="ogldev_texture.h" />
+		<Unit filename="ogldev_types.h" />
+		<Unit filename="ogldev_util.cpp" />
+		<Unit filename="ogldev_util.h" />
+		<Unit filename="ogldev_world_transform.cpp" />
+		<Unit filename="skinned_mesh.cpp" />
+		<Unit filename="skinned_mesh.h" />
+		<Unit filename="skinning.fs" />
+		<Unit filename="skinning.vs" />
+		<Unit filename="skinning_technique.cpp" />
+		<Unit filename="skinning_technique.h" />
+		<Unit filename="stb.cpp" />
+		<Unit filename="stb_image.h" />
+		<Unit filename="stb_image_write.h" />
+		<Unit filename="teapot.h" />
+		<Unit filename="technique.cpp" />
+		<Unit filename="technique.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
