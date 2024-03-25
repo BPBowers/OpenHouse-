@@ -34,7 +34,7 @@
 #include "Models.h"
 #include "ObjModel.h"
 #include "Plane.h"
-#include "TextRendererTTF.h"
+//#include "TextRendererTTF.h"
 #include "Fighter.h"
 #include "Box.h"
 #include "Cube.h"
@@ -94,7 +94,7 @@ private:
     std::string fragShader2DPass;   ///< Fragment Shader for 2D HUD
     std::string vertShader2DPass;   ///< Vertex Shader for 2D HUD
 
-    TextRendererTTF text;   ///< Text object for the HUD
+    //TextRendererTTF text;   ///< Text object for the HUD
 
     GLuint tex1_uniform_loc;
     GLuint texID;   ///< Brick Texture

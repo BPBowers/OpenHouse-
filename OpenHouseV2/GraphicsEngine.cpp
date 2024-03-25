@@ -58,11 +58,13 @@ GraphicsEngine::GraphicsEngine(std::string title, GLint MajorVer, GLint MinorVer
         exit(EXIT_FAILURE);
     }
 
-    //  Setup fonts.
+    //  Setup fonts. Original Text Renderer Code, ignoring becuase of weird compilation errors on VS code
+    /*
     text.loadFont("fonts/Game-Of-Squids.ttf");
     text.setFontSize(24);
     text.setColor(1, 1, 1, 1);
     text.setScreenSize(getSize().x, getSize().y);
+    */
 
     drawAxes = false;
 
@@ -1957,9 +1959,9 @@ void GraphicsEngine::activateHUD()
     //Initilaize text variables
     int starty = getSize().y/20;
     int startx = getSize().x/2.7;
-    text.setScreenSize(getSize().x, getSize().y);
-    text.setColor(1, 1, 1, 1);
-    text.setFontSize((int)(0.8*starty));
+    //text.setScreenSize(getSize().x, getSize().y);
+    //text.setColor(1, 1, 1, 1);
+    //text.setFontSize((int)(0.8*starty));
 
     //Player One's HP bar
     hpBar1.setCenter(-1, 1.35);
@@ -1994,7 +1996,8 @@ void GraphicsEngine::activateHUD()
     behindBar2.setHeight(1.03);
     behindBar2.draw();
     behindBar1.draw();
-//Pause and Game Over Stuff
+//Pause and Game Over Stuff (Gotta redue without the Text Renderer so I don't have to deal with VS code compilation garbage)
+/*
     if (fighterClass[0].fighterHP[1] <= 0 || fighterClass[1].fighterHP[0] <= 0)
     {
         gameOver = true;
@@ -2083,6 +2086,7 @@ void GraphicsEngine::activateHUD()
 
         text.draw("-Press Z for Menu-", x, y-200);
     }
+*/
 }
 
 
